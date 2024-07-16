@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #897766; 
+    color: #f9f9f9; 
+    
+}
+
+header {
+    background: #333; 
+    color: #f9f9f9; 
+    padding: 1rem 0;
+}
+
+
+header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #f9f9f9;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 2rem;
+    box-sizing: border-box; 
+}
+
+
+section {
+    font-family: "sentinel";
+    font-size: 23px;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+section#about {
+    background: #897766; 
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-align:left; 
+    font-size: large;
+    color: #333;
+    
+}
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-bottom: 20px; 
+    float: right;
+    text-align: right;
+}
+
+.contact {
+    background-color :#333; 
+    color: #f9f9f9; 
+    padding: 2rem;
+    text-align: center; 
+}
+
+.address {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.address a {
+    display: inline-block;
+    margin: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    img {
+        width: 50px;
+    }
+}
+
+.address a:hover {
+    color: #333;
+    transform: translateY(-2px);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #897766;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #070707;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+h1 {
+    text-align: center;
+    font-family: "sentinel";
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+section#projects .project {
+    
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    #projects h2 {
+        text-align: center; 
+    }
+    
+    .project {
+        display: flex; 
+        justify-content:space-evenly; 
+        margin-bottom: 10px; 
+    }
+    
+    .project img {
+        width: 30%; 
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px; 
+    }
+    
+
+section#contact {
+    background: #897766; 
+    padding: 2rem;
+    text-align: center; 
+}
+
+footer {
+    background: #897766;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .background-front {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .about-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    footer {
+        padding: 0.5rem 0;
+    }
+
+    .background-front {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+}
